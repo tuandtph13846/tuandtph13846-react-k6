@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "gmail": "tuan@gmail.com",
+      "password": 12345678
+    },
+    {
+      "id": 2,
+      "gmail": "tuan2@gmail.com",
+      "password": 12345678
+    }
+  ],
+  "categorys": [
+    {
+      "id": 1,
+      "name": "Điện thoại"
+    },
+    {
+      "id": 2,
+      "name": "Laptop"
+    },
+    {
+      "id": 3,
+      "name": "Máy tính bảng"
+    },
+    {
+      "id": 4,
+      "name": "Âm thanh"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "tuandz",
+      "price": 134355,
+      "img": "",
+      "describe": "tuan rat dep trai"
+    },
+    {
+      "name": "sdfbdf",
+      "originalPrice": "112",
+      "saleOffPrice": "12",
+      "feature": "tuanf",
+      "desc": "dfgfg",
+      "brief": "tuan dff",
+      "status": 0,
+      "img": "http://res.cloudinary.com/caodangfpt/image/upload/v1658282710/wj5f4vtk3pa0xcrv5qjx.jpg",
+      "id": 2
+    },
+    {
+      "name": "dfhgh",
+      "originalPrice": "112",
+      "saleOffPrice": "12",
+      "feature": "gdfhgf",
+      "desc": "jgj",
+      "brief": "dfnbndfb",
+      "status": 0,
+      "img": "http://res.cloudinary.com/caodangfpt/image/upload/v1658282947/xjr6qcpc6lur7c14eq2j.jpg",
+      "id": 3
+    }
+  ]
+}
