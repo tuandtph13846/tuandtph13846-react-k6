@@ -7,6 +7,7 @@ import {
   Button,
   Divider,
   Image,
+  message,
   Modal,
   PageHeader,
   Select,
@@ -50,7 +51,7 @@ const Product = (props: Props) => {
     getCategories();
     getProducts();
   }, []);
-
+  
 
 
   const onFilerCategory = async (value: any) => {
@@ -165,13 +166,14 @@ const Product = (props: Props) => {
                   okType: "danger",
                   onOk: () => {
                     handleRemove(record.id as string);
-                    toast.success("Xóa thành công rồi!");
+                    message.success('Xoa thanh cong');
                   },
                 });
               }}
             >
               <DeleteOutlined style={{ fontSize: "20px", border: "none" }} />
             </BtnDelete>
+            
           </>
         );
       },
@@ -206,7 +208,6 @@ const Product = (props: Props) => {
       </Space>
       <Divider></Divider>
       <Table columns={columns} dataSource={data} pagination={{ pageSize: 5 }} />
-      <ToastContainer />
     </>
   );
 };
