@@ -6,7 +6,10 @@ export const listProduct = () => {
     const url = `/products`
     return instance.get(url)
 }
-
+export const listProductDetail = (id:string) => {
+    const url = `/products/${id}`
+    return instance.get(url)
+}
 export const addProduct = (product: ProductType) => {
     const url = `/products`;
     return instance.post(url, product);
@@ -20,7 +23,12 @@ export const deleteProduct = (id:string) => {
     return instance.delete(url)
 }
 export const GetPrWithCategory = (id: string) => {
-    const url = `/categories/${id}/products?_sort=createdAt&_order=desc`;
+    const url = `/categories/${id}/products`;
   
     return instance.get(url);
-  };
+};
+export const productUpdate = (product: ProductType) => {
+    const url = `/products/${product.id}`
+    return instance.patch(url,product);
+}
+

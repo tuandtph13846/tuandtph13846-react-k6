@@ -31,32 +31,39 @@
   ],
   "products": [
     {
-      "id": 1,
-      "name": "tuandz",
-      "price": 134355,
-      "img": "",
-      "describe": "tuan rat dep trai"
+      "name": "hihi",
+      "originalPrice": 123,
+      "saleOffPrice": 12,
+      "feature": "hihi",
+      "desc": "hihi",
+      "brief": "hihi",
+      "categoryId": 3,
+      "status": 0,
+      "img": "http://res.cloudinary.com/caodangfpt/image/upload/v1658418531/pfsmacraj48mf5yhbr6x.jpg",
+      "id": 1
     },
     {
-      "name": "sdfbdf",
-      "originalPrice": "112",
+      "name": "Tuấn",
+      "originalPrice": "123",
       "saleOffPrice": "12",
-      "feature": "tuanf",
-      "desc": "dfgfg",
-      "brief": "tuan dff",
+      "feature": "tuan",
+      "desc": "tuan",
+      "brief": "hihi",
+      "categoryId": 2,
       "status": 0,
-      "img": "http://res.cloudinary.com/caodangfpt/image/upload/v1658282710/wj5f4vtk3pa0xcrv5qjx.jpg",
+      "img": "http://res.cloudinary.com/caodangfpt/image/upload/v1658418578/ywudwdpjhp9bnq1ctbil.jpg",
       "id": 2
     },
     {
-      "name": "dfhgh",
-      "originalPrice": "112",
+      "name": "tuan",
+      "originalPrice": "123",
       "saleOffPrice": "12",
-      "feature": "gdfhgf",
-      "desc": "jgj",
-      "brief": "dfnbndfb",
+      "feature": "Tuans",
+      "desc": "dfgd",
+      "brief": "hihi",
+      "categoryId": 1,
       "status": 0,
-      "img": "http://res.cloudinary.com/caodangfpt/image/upload/v1658282947/xjr6qcpc6lur7c14eq2j.jpg",
+      "img": "http://res.cloudinary.com/caodangfpt/image/upload/v1658418617/fvc6lkiriem9jztuef3c.webp",
       "id": 3
     }
   ]

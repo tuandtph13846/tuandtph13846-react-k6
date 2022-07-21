@@ -6,6 +6,7 @@ import {
   Form,
   Input,
   InputNumber,
+  message,
   PageHeader,
   Row,
   Select,
@@ -57,12 +58,12 @@ const AddPhone = (props: Props) => {
         status: 0,
         img: imgLink,
       });
-      toast.success("Thêm thành công");
+      message.success('Them thanh cong');
       setTimeout(() => {
         navigate("/admin/products");
       }, 1000);
     } catch (error) {
-      toast.error("Thêm không thành công");
+      message.error('Them khong thanh cong');
     }
   };
 
@@ -163,9 +164,12 @@ const AddPhone = (props: Props) => {
             </DivLine>
 
             <Form.Item
-              name="category"
+              name="categoryId"
               label="Danh mục"
               style={{ display: "inline-block", width: "48%" }}
+              rules={[
+                { required: true, message: "Vui lòng chọn danh mục sản phẩm" },
+              ]}
             >
               <Select placeholder="Danh mục sản phẩm">
                 {category.map((item, index) => {
