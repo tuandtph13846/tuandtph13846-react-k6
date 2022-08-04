@@ -14,7 +14,7 @@
   "categorys": [
     {
       "id": 1,
-      "name": "Điện thoại"
+      "name": "Điện Thoại"
     },
     {
       "id": 2,
@@ -31,21 +31,9 @@
   ],
   "products": [
     {
-      "name": "hihi",
+      "name": "Tuấnhihi",
       "originalPrice": 123,
       "saleOffPrice": 12,
-      "feature": "hihi",
-      "desc": "hihi",
-      "brief": "hihi",
-      "categoryId": 3,
-      "status": 0,
-      "img": "http://res.cloudinary.com/caodangfpt/image/upload/v1658418531/pfsmacraj48mf5yhbr6x.jpg",
-      "id": 1
-    },
-    {
-      "name": "Tuấn",
-      "originalPrice": "123",
-      "saleOffPrice": "12",
       "feature": "tuan",
       "desc": "tuan",
       "brief": "hihi",
@@ -55,16 +43,40 @@
       "id": 2
     },
     {
-      "name": "tuan",
+      "name": "tuanhihi",
+      "originalPrice": 1233,
+      "saleOffPrice": 123,
+      "feature": "Tuanshihi",
+      "desc": "dfgdhihi",
+      "brief": "hihihihi",
+      "categoryId": 2,
+      "status": 0,
+      "img": "http://res.cloudinary.com/caodangfpt/image/upload/v1658450055/ylx5zjxu0zspjcxpcabo.jpg",
+      "id": 3
+    },
+    {
+      "name": "fdgfd",
+      "originalPrice": "123",
+      "saleOffPrice": "3",
+      "feature": "jyy",
+      "desc": "jjh",
+      "brief": "yuan",
+      "categoryId": 3,
+      "status": 0,
+      "img": "http://res.cloudinary.com/caodangfpt/image/upload/v1658454251/e04fjbzisczaxyfgmo1k.jpg",
+      "id": 4
+    },
+    {
+      "name": "uyu",
       "originalPrice": "123",
       "saleOffPrice": "12",
-      "feature": "Tuans",
-      "desc": "dfgd",
-      "brief": "hihi",
-      "categoryId": 1,
+      "feature": "jij",
+      "desc": "ji",
+      "brief": "rytu",
+      "categoryId": 2,
       "status": 0,
-      "img": "http://res.cloudinary.com/caodangfpt/image/upload/v1658418617/fvc6lkiriem9jztuef3c.webp",
-      "id": 3
+      "img": "http://res.cloudinary.com/caodangfpt/image/upload/v1658454274/lx7wncsyjzllun6robyh.png",
+      "id": 5
     }
   ]
 }

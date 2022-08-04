@@ -113,7 +113,7 @@ const AddPhone = (props: Props) => {
             <Form.Item
               name="name"
               label="Tên sản phẩm"
-              rules={[{ required: true, message: "Username is required" }]}
+              rules={[{ required: true, message: "Mời nhập tên sản phẩm" }]}
             >
               <Input />
             </Form.Item>
@@ -125,7 +125,7 @@ const AddPhone = (props: Props) => {
                 label="Giá gốc"
                 style={{ display: "inline-block", width: "48%" }}
                 rules={[
-                  { required: true, message: "Price is required" },
+                  { required: true, message: "Giá gốc" },
                   {
                     pattern: new RegExp(/^[0-9]+$/),
                     message: "Price is not number",

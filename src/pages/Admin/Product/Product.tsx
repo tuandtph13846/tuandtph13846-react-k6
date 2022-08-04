@@ -86,6 +86,13 @@ const Product = (props: Props) => {
 
   const columns = [
     {
+      title: "Stt",
+      dataIndex: "key",
+      align: "center" as "center",
+      key: "key",
+      
+    },
+    {
       title: "Ảnh",
       dataIndex: "img",
       align: "center" as "center",

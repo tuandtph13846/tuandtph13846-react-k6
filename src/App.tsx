@@ -10,6 +10,8 @@ import Category from './pages/Admin/Category/Category'
 import Dashboard from './pages/Admin/Dashboard'
 import ProductAdd from './pages/Admin/Product/ProductAdd'
 import ProductEdit from './pages/Admin/Product/ProductEdit'
+import CategoryAdd from './pages/Admin/Category/CategoryAdd'
+import CategoryEdit from './pages/Admin/Category/CategoryEdit'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,12 +26,20 @@ function App() {
         <Route path="admin" element={<AdminLayout />}>
           <Route index element={<Navigate to="dashboard"/>} />
           <Route path="dashboard" element={<Dashboard />} />
+
           <Route path="products">
             <Route index element={<Product/>}/>
             <Route path="add" element={<ProductAdd/>}/>
             <Route path="edit/:id" element={<ProductEdit/>}/>
           </Route>
-          <Route path="categorys" element={<Category />} />
+
+          <Route path="categorys">
+
+            <Route index element={<Category/>}/>
+            <Route path="add" element={<CategoryAdd/>}/>
+            <Route path="edit/:id" element={<CategoryEdit/>}/>
+          </Route>
+
         </Route>
       </Routes>
 

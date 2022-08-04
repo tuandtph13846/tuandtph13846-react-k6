@@ -25,13 +25,9 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import styled from "styled-components";
 import { listCategory } from "../../../api/categorys";
-import {  listProductDetail, productUpdate } from "../../../api/product";
+import { listProductDetail, productUpdate } from "../../../api/product";
 import { CateType } from "../../../types/CategoryType";
 import { onPreview, upload } from "../../../utils/upimage";
-
-
-
-
 
 type Props = {};
 
@@ -83,7 +79,7 @@ const ProductEdit = (props: Props) => {
     }
 
     try {
-      productUpdate(dataInput)
+      productUpdate(dataInput);
       message.success("Sửa thành công");
       setTimeout(() => {
         navigate("/admin/products");
@@ -281,7 +277,19 @@ const UploadImage = styled(Dragger)`
   margin-bottom: 20px;
 `;
 export default ProductEdit;
-function updateProduct(dataInput: { name: any; originalPrice: number; saleOffPrice: number; feature: any; desc: any; brief: any; categoryId: any; status: any; img: any; }, id: string | undefined) {
+function updateProduct(
+  dataInput: {
+    name: any;
+    originalPrice: number;
+    saleOffPrice: number;
+    feature: any;
+    desc: any;
+    brief: any;
+    categoryId: any;
+    status: any;
+    img: any;
+  },
+  id: string | undefined
+) {
   throw new Error("Function not implemented.");
 }
-
