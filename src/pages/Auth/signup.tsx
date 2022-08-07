@@ -3,42 +3,45 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import styled from "styled-components";
-import { signin, signup } from "../../api/auth";
+import { signup } from "../../api/auth";
 
 type Props = {};
 
-const Signin = (props: Props) => {
+const Signup = (props: Props) => {
   const [form] = Form.useForm();
 
   const navigate = useNavigate();
 
   const onFinish = async (value: any) => {
     try {
-      const { data } = await signin({
+      const { data } = await signup({
+        name: value.name,
         email: value.email,
         password: value.password,
+        status: 0,
       });
       if (data) {
-        localStorage.setItem("user", JSON.stringify(data));
-        message.success("Đăng nhập tài khoản thành công!");
+        message.success("Đăng kí tài khoản thành công!");
         setTimeout(() => {
-          navigate("/");
+          navigate("/signin");
         }, 2000);
       }
     } catch (error) {
-      const e = error as any;
-      if (e.response.data === "Incorrect password") {
-        message.error("Mật khẩu không chính xác");
-      }
-      if (e.response.data === "Cannot find user") {
-        message.error("Tài khoản không tồn tại");
-      }
+      message.error("Email đã tồn tại");
     }
   };
   return (
     <SignupPage>
       <div className="body-form">
         <Form layout="vertical" form={form} onFinish={onFinish}>
+          <Form.Item
+            label="Họ và tên"
+            className="name"
+            name="name"
+            rules={[{ required: true, message: "Không được để trống!" }]}
+          >
+            <Input placeholder="" />
+          </Form.Item>
           <Form.Item
             label="Email"
             className="username"
@@ -67,7 +70,7 @@ const Signin = (props: Props) => {
               },
             ]}
           >
-            <Input placeholder="" />
+            <Input.Password placeholder="" />
           </Form.Item>
           <Form.Item>
             <Button
@@ -77,7 +80,7 @@ const Signin = (props: Props) => {
               danger
               className="btn-sm"
             >
-              Đăng nhập
+              Đăng kí
             </Button>
           </Form.Item>
         </Form>
@@ -91,28 +94,24 @@ const Signin = (props: Props) => {
 };
 
 const SignupPage = styled.div`
-   margin: 70px auto 0 auto;
+
   width: 800px;
   height: 508px;
-  /* margin: auto; */
+  margin: 70px auto 0 auto;
   display: flex;
   box-shadow: 0 1px 2px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
   border-radius: 10px;
   /* align-items: center; */
-
   .body-form {
     padding: 80px 45px;
     width: 500px;
   }
-
   .ant-form-item-label > label {
     font-weight: 400;
     font-size: 19px;
     line-height: 16px;
-
     color: #000000;
   }
-
   .ant-input {
     width: 410px;
     height: 48px;
@@ -120,7 +119,6 @@ const SignupPage = styled.div`
     border: 1px solid #c7c7c7;
     border-radius: 5px;
   }
-
   .btn-sm {
     width: 410px;
     height: 48px;
@@ -131,7 +129,6 @@ const SignupPage = styled.div`
     line-height: 16px;
     color: #ffffff;
   }
-
   .logo-signup {
     width: calc(100% - 500px);
     background: #f8f8f8;
@@ -142,4 +139,4 @@ const SignupPage = styled.div`
   }
 `;
 
-export default Signin;
+export default Signup;

@@ -31,4 +31,10 @@ export const productUpdate = (product: ProductType) => {
     const url = `/products/${product.id}`
     return instance.patch(url,product);
 }
-
+export const similarProduct = (categoryId: string) => {
+    console.log(categoryId);
+  
+    const url = `/products?categoryId=${categoryId}&_limit=6`;
+  
+    return instance.get(url);
+  };
