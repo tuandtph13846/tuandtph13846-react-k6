@@ -1,8 +1,5 @@
 {
-    "routers":[
-        {
-            "src":"/admin",
-            "dest":"/"
-        }
+    "redirects":[
+        {"source":"/admin","destination":"/admin"}
     ]
 }
