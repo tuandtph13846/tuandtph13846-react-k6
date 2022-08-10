@@ -16,6 +16,27 @@
       "name": "Đỗ Thành Tuấn",
       "status": 1,
       "id": 3
+    },
+    {
+      "email": "t@gmail.com",
+      "password": "$2a$10$kUTmk3ueX8IXcEfpHDlj5eqjHzFwayEfD.LhuFA/glbTKhuwCHJUS",
+      "name": "Đỗ Thành Tuấn",
+      "status": 0,
+      "id": 4
+    },
+    {
+      "email": "e@gmail.com",
+      "password": "$2a$10$QFH45RwNeVth7IigMirFKuXvyYbb9NuSxVu974rD1btRxHLx0N/7W",
+      "name": "Thuốc diệt cỏ",
+      "status": 0,
+      "id": 5
+    },
+    {
+      "email": "u@gmail.com",
+      "password": "$2a$10$50U7eR3TPCSGvv5noxIkQuUO.68VIvzZzJWdCio7daLr2GKtDYlzG",
+      "name": "Đỗ Thành Tuấn",
+      "status": 0,
+      "id": 6
     }
   ],
   "categorys": [
@@ -124,7 +145,7 @@
     {
       "name": "Xiaomi Redmi Note 11 128GB",
       "originalPrice": 4990000,
-      "saleOffPrice":   2130000,
+      "saleOffPrice": 2130000,
       "feature": "Thu cũ đổi mới - Trợ giá đến 300.000đ",
       "desc": "Thu cũ đổi mới - Trợ giá đến 300.000đ",
       "brief": "Thu cũ đổi mới - Trợ giá đến 300.000đ",

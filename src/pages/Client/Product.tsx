@@ -17,7 +17,7 @@ const ProductPage = (props: Props) => {
 
   useEffect(() => {
     const getData = async () => {
-      const { data } = await listCategoryDetail(id);
+      const { data } = await listCategoryDetail(id as string);
       setCategory(data);
       const resCategory = await listCategory();
       setCategories(resCategory.data);

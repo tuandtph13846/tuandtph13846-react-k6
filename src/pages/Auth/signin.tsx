@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import styled from "styled-components";
 import { signin, signup } from "../../api/auth";
-
+import logo from "../../assets/logo.png"
 type Props = {};
 
 const Signin = (props: Props) => {
@@ -83,7 +83,7 @@ const Signin = (props: Props) => {
         </Form>
       </div>
       <div className="logo-signup">
-        <img src="../../../img/logo.png" alt="" />
+        <img src={logo} alt="" />
       </div>
       <ToastContainer />
     </SignupPage>

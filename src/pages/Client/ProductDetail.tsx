@@ -88,10 +88,10 @@ const ProductDetail = (props: Props) => {
                 <button className="buy-now">Mua Ngay</button>
                 <div className="add-cart">
                   <button
-                  onClick={() => {
-                    addToCart(productd);
-                  }}>
-                    
+                    onClick={() => {
+                      addToCart(productd);
+                    }}
+                  >
                     <ShoppingCartOutlined />
                   </button>
                   <p>
@@ -104,6 +104,21 @@ const ProductDetail = (props: Props) => {
           </Col>
           <Col span={5} pull={18}>
             <img src={productd?.img} width={350} />
+            <ImgDetail>
+            <div className="ImgDetailCopy">
+              <img src={productd?.img} width={50} />
+            </div>
+            <div className="ImgDetailCopy">
+              <img src={productd?.img} width={50} />
+            </div>
+            <div className="ImgDetailCopy">
+              <img src={productd?.img} width={50} />
+            </div>
+            <div className="ImgDetailCopy">
+              <img src={productd?.img} width={50} />
+            </div>
+              
+            </ImgDetail>
           </Col>
         </Row>
 
@@ -178,7 +193,18 @@ const Breadcrumbb = styled(Breadcrumb)`
   padding: 4px 0 4px 192px;
   box-shadow: 0 1px 2px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
 `;
-
+const ImgDetail = styled.div`
+  width: 250px;
+  margin: 30px 40px ;
+  padding: 20px;
+  display: flex;
+  .ImgDetailCopy{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-right: 3px;
+  }
+`
 const MainContent = styled.div`
   max-width: 1150px;
   margin: 0 auto;
