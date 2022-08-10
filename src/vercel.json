@@ -1,6 +1,6 @@
 {
-    "redirects":[
-        {"source":"/admin","destination":"/admin","permanent":false}
+    "routes":[
+        {"src":"/admin","dest":"/admin"}
 
     ]
 }
